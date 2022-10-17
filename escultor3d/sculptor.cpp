@@ -5,6 +5,10 @@ Sculptor::Sculptor(int _nx, int _ny, int _nz)
     nx = _nx;
     ny = _ny;
     nz = _nz;
+    v = new Voxel**[1];
+    v[0] = new Voxel*[1];
+    v[0][0]= new Voxel[1];
+
 }
 void Sculptor::setColor(float r_, float g_, float b_, float a_)
 {
