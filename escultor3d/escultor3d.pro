@@ -15,7 +15,8 @@ SOURCES += \
 
 HEADERS += \
     mainwindow.h \
-    sculptor.h
+    sculptor.h \
+    voxel.h
 
 FORMS += \
     mainwindow.ui

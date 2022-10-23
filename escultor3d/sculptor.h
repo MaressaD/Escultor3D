@@ -1,12 +1,6 @@
 #ifndef SCULPTOR_H
 #define SCULPTOR_H
-
-
-struct Voxel {
-  float r,g,b; // Colors
-  float a; // Transparency
-  bool isOn; // Included or not
-};
+#include "voxel.h"
 
 class Sculptor {
 private:
@@ -15,7 +9,8 @@ private:
   float r,g,b,a; // Current drawing color
 public:
   Sculptor(int _nx, int _ny, int _nz);
-  void setColor(float r_, float g_, float b_, float a_);
+  ~Sculptor();
+  void setColor(float r, float g, float b, float a);
   void putVoxel(int x, int y, int z);
   void cutVoxel(int x, int y, int z);
   void putBox(int x0, int x1, int y0, int y1, int z0, int z1);
@@ -25,7 +20,7 @@ public:
   void putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
   void cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
   void writeOFF(const char* filename);
-  ~Sculptor();
+
 };
 
 #endif // SCULPTOR_H
