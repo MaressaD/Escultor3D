@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1666597461 source:c:\users\mares\onedrive\햞ea de trabalho\escultor_3d\main.cpp
+	"sculptor.h"
+	<fstream>
+	<iostream>
+	<cstdlib>
+
+1666552310 c:\users\mares\onedrive\햞ea de trabalho\escultor_3d\sculptor.h
+	"voxel.h"
+
+1666554255 c:\users\mares\onedrive\햞ea de trabalho\escultor_3d\voxel.h
+
+1666596622 source:c:\users\mares\onedrive\햞ea de trabalho\escultor_3d\sculptor.cpp
+	<cmath>
+	<fstream>
+	<iostream>
+	<cstdlib>
+	"sculptor.h"
+
