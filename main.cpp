@@ -18,5 +18,5 @@ int main(void)
     melancia.setColor(0.9,0.1,0.1,0.5);
     melancia.putSphere(10,10,10,9);
     melancia.cutBox(10,20,10,20,10,20);
-    melancia.writeOFF("melancia.off");
+    melancia.writeOFF("melancia2.off");
 }
